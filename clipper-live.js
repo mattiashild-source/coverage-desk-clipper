@@ -5249,7 +5249,7 @@ readPage: readPage
        does not have to be re-dragged to file a clip. See DEFAULT_PILE_URL in
        url-clipper.js for why that stopped being carried. */
     if (!COLLECTOR) COLLECTOR = C.DEFAULT_PILE_URL || '';
-    var w = (cfg && cfg.win) || window.open('', '_blank', 'width=900,height=800');
+    var w = (cfg && cfg.win) || window.open('', 'coverage-desk-clip', 'width=900,height=800');
     if(!w){ window.__clipperBusy = false; alert('Allow pop-ups for this site, then click Clip article again.'); return; }
     /* Open synchronously so popup blockers accept it, then scroll the source
        tab in bounded viewport steps. Many publishers append the second and
